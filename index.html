@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetLovers - Banho, Tosa e Carinho</title>
+    
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- CSS Customizado -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div vw class="enabled">
+        <div vw-access-button class="border-0"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/gh/vlibras/vlibras-plugin@master/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
+<!--ESTRUTURA DE NAVEGAÇÃO DOS MENUS-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-purple shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="index.html">🐶 PetLovers</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="agendamento.html">Agendamento</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SEÇÃO HERO (BANNER FIXO DO TOPO) -->
+        <section class="hero-section">
+            <!-- Espaço reservado para a imagem de fundo definida no CSS -->
+        </section>
+
+        <!-- CAROUSEL  -->
+        <section id="especiais" class="carousel slide my-5 shadow" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#especiais" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#especiais" data-bs-slide-to="1"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Item 1: Banho/ UTILIZADO D-NONE D-MD-BLOCK PARA ESCONDER LEGENDAS EM CELULARES NÃO POLUINDO A TELA -->
+                <div class="carousel-item active">
+                    <img src="img/Pictures/Camera Roll/banho.jpg" class="d-block w-100" alt="Banho relaxante">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fw-bold">Banho Relaxante</h5>
+                        <p>Seu pet limpinho e cheiroso.</p>
+                    </div>
+                </div> 
+
+                <!-- Item 2: Tosa -->
+                <div class="carousel-item">
+                    <img src="img/Pictures/Camera Roll/tosa.jpg" class="d-block w-100" alt="Tosa Especializada">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="fw-bold">Tosa Especializada</h5>
+                        <p>Corte perfeito para cada raça.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Controles do Caroussel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#especiais" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#especiais" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </section>
+
+        <!-- CARDS INFORMATIVOS (NOSSOS DIFERENCIAIS) -->
+        <section class="container my-5">
+            <h2 class="text-center mb-5 fw-bold">Por que escolher a PetLovers?</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h1 class="display-4">🏠</h1>
+                            <h5 class="card-title text-purple fw-bold">Ambiente Monitorado</h5>
+                            <p class="card-text">Instalações limpas, seguras e climatizadas para o seu pet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-purple border-2">
+                        <div class="card-body">
+                            <h1 class="display-4">✂️</h1>
+                            <h5 class="card-title fw-bold">Tosa Profissional</h5>
+                            <p class="card-text">Especialistas em manter o padrão da raça e o bem-estar animal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h1 class="display-4">🚗</h1>
+                            <h5 class="card-title fw-bold">Táxi Dog</h5>
+                            <p class="card-text">Buscamos e levamos seu pet com segurança em nossa frota adaptada.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GUIA DE DIFERENCIAIS  -->
+        <section class="container my-5 p-4 bg-light rounded shadow-sm">
+            <h2 class="text-center mb-4 text-purple fw-bold">Conheça nossos diferenciais</h2>
+            <div class="accordion" id="accordionServicos">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            ✨ Tosa Higiênica: Saúde em primeiro lugar
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
+                        <div class="accordion-body">
+                            Focada na limpeza de áreas críticas, previne o acúmulo de sujeira e proliferação de fungos.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            ✂️ Tosa Máquina vs. Tesoura: Qual a diferença?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
+                        <div class="accordion-body">
+                            A máquina é prática para o dia a dia; a tesoura é um trabalho artesanal que preserva o aspecto natural.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                            🧴 Hidratação: Proteção e Brilho
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionServicos">
+                        <div class="accordion-body">
+                            Mais do que estética, a hidratação repõe nutrientes essenciais e evita nós.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE SATISFAÇÃO DO CLIENTE -->
+        <section class="container my-5">
+            <div class="row align-items-center p-4 shadow rounded bg-white">
+                <div class="col-md-5 mb-4 mb-md-0">
+                    <img src="img/Pictures/Camera Roll/spa.jpg" class="img-spa-satisfacao shadow" alt="Pet relaxando no Spa">
+                </div>
+                <div class="col-md-7 ps-md-5">
+                    <h2 class="text-purple fw-bold mb-4">O que dizem nossos clientes</h2>
+                    <p class="lead fst-italic">"O melhor cuidado que já encontrei em Campinas! O ambiente de spa é realmente diferenciado."</p>
+                    <div class="fw-bold text-dark mt-3">— Mariana Souza & Mel 🐾</div>
+                    <div class="text-warning mt-2">★★★★★ <span class="text-muted small">(5.0/5.0)</span></div>
+                    <div class="mt-4">
+                        <a href="agendamento.html" class="btn btn-purple shadow">Quero meu pet feliz assim!</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO FINAL: CHAMADA PARA AGENDAMENTO -->
+        <section class="py-5 bg-purple text-white text-center shadow-lg">
+            <div class="container">
+                <h2 class="fw-bold mb-3">Pronto para dar esse presente ao seu pet?</h2>
+                <p class="lead mb-4">Estamos esperando por vocês em Campinas com todo o carinho.</p>
+                <a href="agendamento.html" class="btn btn-light btn-lg px-5 fw-bold text-purple shadow">
+                    Agende Agora
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-1 fw-bold">&copy; 2026 PetLovers Banho & Tosa Ltda.</p>
+            <p class="small">Avenida Comendador Enzo Ferrari, 280 - Swift, Campinas/SP | (19) 99999-9999</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

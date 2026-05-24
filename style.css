@@ -1,0 +1,178 @@
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+/* --- IDENTIDADE VISUAL --- */
+.navbar, .bg-purple {
+    background-color: #6f42c1 !important;
+}
+
+/* MENU */
+.navbar-nav .nav-link {
+    color: #ffffff !important; 
+    transition: 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffc107 !important; /* Destaque amarelo no hover */
+}
+
+.text-purple {
+    color: #6f42c1 !important;
+}
+
+.border-purple {
+    border-color: #6f42c1 !important;
+}
+
+/* --- SEÇÃO "HERO" banner --- */
+.hero-section {
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/Pictures/Camera Roll/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px; 
+    width: 100%;
+    padding: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* --- CARROSSEL E IMAGENS --- */
+.carousel-item img, .img-tosa, .img-spa-satisfacao {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.carousel-item img {
+    height: 500px;
+}
+
+
+.img-spa-satisfacao {
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Estilo para o texto do depoimento */
+.testimonial-quote {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #6f42c1;
+    padding-left: 15px;
+}
+
+/* --- TABELA DE SERVIÇOS --- */
+.table-responsive {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #eee;
+    background-color: #fff;
+}
+
+.table thead th {
+    background-color: #fdf2d0 !important; 
+    color: #333;
+    font-weight: 700;
+    border: none;
+    padding: 15px;
+}
+
+.table tbody td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #f1f1f1;
+    color: #444;
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.table tbody td:first-child {
+    font-weight: 600;
+    color: #212529;
+}
+
+.table tbody tr:last-child td {
+    color: #6f42c1;
+    font-weight: 700;
+    background-color: #f8f9fa;
+}
+
+/* --- BOTÕES CUSTOMIZADOS --- */
+.btn-purple {
+    background-color: #6f42c1;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    transition: 0.3s;
+}
+
+.btn-purple:hover {
+    background-color: #563d7c;
+    color: white;
+    transform: scale(1.05);
+}
+
+.btn-agendar-tabela {
+    background-color: #ffc107;
+    color: #000;
+    font-weight: 700;
+    padding: 12px 40px;
+    border-radius: 8px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-agendar-tabela:hover {
+    background-color: #a800ea;
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(243, 8, 223, 0.4);
+}
+
+.btn-light.text-purple {
+    color: #6f42c1 !important;
+    border: none;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-light.text-purple:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.1);
+    color: #563d7c !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* --- RODAPÉ --- */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 300px;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+    .img-spa-satisfacao {
+        height: 250px;
+    }
+    .table thead th, .table tbody td {
+        padding: 10px 5px;
+        font-size: 0.85rem;
+    }
+}
